@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:technupur_interview_test/resources/color_manager.dart';
 
 class Categories extends StatefulWidget {
   List<dynamic> categoriesList;
@@ -40,7 +41,7 @@ class _CategoriesState extends State<Categories> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: widget.selectedCategoryIndex == index
-                            ? const Color(0xFFB9202B)
+                            ? ColorManager.color3
                             : const Color(0xFF89999F), // Set the border color
                         width: 1.w, // Set the border width
                       ),
@@ -70,7 +71,7 @@ class _CategoriesState extends State<Categories> {
                       color: Colors.white,
                       border: Border.all(
                         color: widget.selectedCategoryIndex == index
-                            ? const Color(0xFFB9202B)
+                            ? ColorManager.color3
                             : const Color(0xFF89999F), // Set the border color
                         width: 1.w, // Set the border width
                       ),

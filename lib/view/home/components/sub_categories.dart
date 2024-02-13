@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:technupur_interview_test/view/components/custom_spacer.dart';
 
+import '../../../resources/color_manager.dart';
+
 class SubCategories extends StatefulWidget {
   List<dynamic> categoriesList;
   int selectedCategoryIndex;
@@ -47,7 +49,7 @@ class _SubCategoriesState extends State<SubCategories> {
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: widget.selectedCategoryIndex == index
-                                ? const Color(0xFFB9202B)
+                                ? ColorManager.color3
                                 : const Color(
                                     0xFF89999F), // Set the border color
                             width: 2.w, // Set the border width
@@ -72,7 +74,7 @@ class _SubCategoriesState extends State<SubCategories> {
                           color: Colors.white,
                           border: Border.all(
                             color: widget.selectedCategoryIndex == index
-                                ? const Color(0xFFB9202B)
+                                ? ColorManager.color3
                                 : const Color(
                                     0xFF89999F), // Set the border color
                             width: 2.w, // Set the border width
